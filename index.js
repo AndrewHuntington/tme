@@ -7,8 +7,7 @@ const runner = new Runner();
 // to support top-level await statements. May no longer be necessary.
 const run = async () => {
   await runner.collectFiles(process.cwd());
-
-  console.log(runner.testFiles);
+  runner.runTests();
 };
 
 run();
